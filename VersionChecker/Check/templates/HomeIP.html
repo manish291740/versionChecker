@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IP Pages</title>
+<style>
+body{
+font-family:'Open Sans', sans-serif;
+}
+
+label {
+font-weight:550;
+ padding: 12px 12px 12px 0;
+font-size:14px;
+  display: inline-block;
+letter-spacing:0.2px;
+}
+
+.divHeading{
+        color:white;
+        font-size:16px;
+        font-weight:550;
+        letter-spacing:0.5;
+        margin-right:95px;
+        font-family:'Open Sans', sans-serif;
+}
+
+h7{
+font-size:13px;
+text-align:center;
+
+
+
+}
+
+
+input[type=submit]:hover {
+background-color: #ffff;
+color: black;
+padding: 7px 20px;
+border: 1px #838383 solid;
+border-radius: 4px;
+font-weight:700;
+
+
+
+}
+
+.container {
+    border-radius: 5px;
+    margin: 35px 350px;
+    padding:25px;
+    margin: 35px 350px;
+    padding: 25px;
+    border: solid 1px #0094f2;
+    border-radius: 25px;
+    height:170px;
+}
+
+.col-35 {
+  float: left;
+  width: 25%;
+  margin-top: 20px;
+}
+
+
+.btn_reset{
+float:left;
+width:100px;
+}
+
+
+input[type=text], select, textarea {
+
+  width: 67%;  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+
+
+input[type=submit] {
+    background-color: #838383;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+row{
+margin-top:4px;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit], .col35, .btn_reset {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+ }
+
+ .col-50 {
+
+    width: 50%;
+
+}
+
+</style>
+</head>
+
+
+<body>
+<table align="center" width="100%" height="55px">
+<tbody>
+<tr >
+<td align="center" style="position:fixed" width="20%" bgcolor="#fff" > <img src=https://th.bing.com/th/id/R.fe525a9d42012e27ec83c2462180fb27?rik=Y6wbdM7TIsVsJg&riu=http%3a%2f%2fwww.worldofchemicals.com%2fNews%2f11909%2f75x75%2fThyssenkrupp+logo.jpg&ehk=eJIjTWg%2baIYnUDVV5lgqYdl6BVfyb7I3h26EUt4Alnc%3d&risl=&pid=ImgRaw&r=0 width="85" height="65 !important" align="justify">
+</td>
+<td align="right" width="80%" style="background-image: url(https://i.postimg.cc/sxzTdKrs/Polygon-1.png); background-repeat: no-repeat; background-position:left; background-size: cover;">
+    <span class="divHeading" > System Readiness Check</span>
+    </td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="container">
+  <form method="post"  enctype="multipart/form-data">
+      {% csrf_token %}
+    <div class="row">
+      <div class="col-35">
+        <label id="ptype" >Machine Name </label>
+      </div>
+
+    <div class="col-65">
+        <input type="text" id="Ip_no" name="Ip_Address" placeholder="Enter your Machine Name..." style="margin-top:20px;">
+       <div style="margin-top:20px; margin-left:120px; text-align:center;"> <h7 >
+            Enter Machine name  in this format machine1.com,machine2.com for multiple IP
+       </h7></div>
+
+      </div>
+
+
+    </div>
+<div class="row">
+
+    <div class="col-50"></div>
+
+    </div>
+<div class="col-50">
+      <input class="btn_reset" name="btn_process" type="submit" value="Submit" style="margin-left:250px; margin-top:30px;">
+</div>
+
+
+</form>
+</div>>
+</body>
+</html>
